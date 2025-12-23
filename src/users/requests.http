@@ -1,0 +1,29 @@
+
+### Create New User 
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email": "nk@gmail.com",
+   "password": "nk"
+}
+
+
+### FInd User by ID
+GET http://localhost:3000/auth/1
+
+### FInd User by Email
+GET http://localhost:3000/auth?email=kaiser@gmail.com
+
+### Update User by ID
+PATCH http://localhost:3000/auth/1
+Content-Type: application/json
+
+{
+  "email": "kaiser_updated@gmail.com",
+   "password": "nahid_updated"
+}
+
+
+###Delete User by ID
+DELETE http://localhost:3000/auth/24
