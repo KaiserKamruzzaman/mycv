@@ -1,12 +1,30 @@
 
 ### Create New User 
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email": "email@gmail.com",
+   "password": "email"
+}
+
+### Sign In User
 POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
-  "email": "nk@gmail.com",
-   "password": "nk"
+  "email": "email@gmail.com",
+   "password": "email"
 }
+
+
+### GEZ Current User
+GET http://localhost:3000/auth/whoami
+
+
+### Sign Out User
+POST http://localhost:3000/auth/signout
+
 
 
 ### FInd User by ID
