@@ -20,8 +20,6 @@ export class AuthService {
       throw new BadRequestException('Email in use');
     }
 
-    // hash the
-
     //generate the salt
     const salt = randomBytes(8).toString('hex');
     // hash the salt and the password together
